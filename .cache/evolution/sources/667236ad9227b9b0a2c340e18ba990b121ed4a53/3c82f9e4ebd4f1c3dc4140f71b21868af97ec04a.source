@@ -1,0 +1,26 @@
+[Data Source]
+DisplayName=Мої завдання
+Enabled=true
+Parent=667236ad9227b9b0a2c340e18ba990b121ed4a53
+
+[Authentication]
+Host=www.google.com
+Method=OAuth2
+Port=0
+ProxyUid=system-proxy
+RememberPassword=true
+User=solomiia.shchepitka.itis.2020@lpnu.ua
+CredentialName=
+IsExternal=false
+
+[Resource]
+Identity=gtasks::MDQ5NzE3MDgwMDYzODY2NTI0Mjg6MDow
+
+[Alarms]
+IncludeMe=false
+LastNotified=
+
+[Task List]
+BackendName=gtasks
+Color=#becedd
+Selected=true

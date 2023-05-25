@@ -1,0 +1,44 @@
+[Data Source]
+DisplayName=solomiia.shchepitka.itis.2020@lpnu.ua
+Enabled=true
+Parent=
+
+[Authentication]
+Host=
+Method=OAuth2
+Port=0
+ProxyUid=system-proxy
+RememberPassword=true
+User=
+CredentialName=
+IsExternal=true
+
+[Collection]
+BackendName=google
+CalendarEnabled=true
+ContactsEnabled=true
+Identity=solomiia.shchepitka.itis.2020@lpnu.ua
+MailEnabled=true
+AllowSourcesRename=false
+CalendarUrl=
+ContactsUrl=
+
+[GNOME Online Accounts]
+AccountId=account_1631735204_0
+CalendarUrl=https://apidata.googleusercontent.com/caldav/v2/solomiia.shchepitka.itis.2020@lpnu.ua/user
+ContactsUrl=https://www.googleapis.com/.well-known/carddav
+Name=
+Address=solomiia.shchepitka.itis.2020@lpnu.ua
+
+[WebDAV Backend]
+AvoidIfmatch=false
+CalendarAutoSchedule=false
+Color=
+DisplayName=
+EmailAddress=
+ResourcePath=
+ResourceQuery=
+SslTrust=
+
+[Security]
+Method=none

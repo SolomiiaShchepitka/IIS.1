@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+ 
+
+<html>
+  <head>
+    <style>
+	* {
+		margin: 0;
+		padding: 0;
+	}
+
+	body {
+		background-color: #f2f3f3;
+	}
+
+	body.color-theme-dark {
+		background-color: #16191f;
+	}
+
+	.color-theme-dark .spinner__circle:after {
+		border-top-color: #fff;
+		border-left-color: #fff;
+	}
+
+	body.color-theme-light {
+		background-color: #f2f3f3;
+	}
+
+	@media (prefers-color-scheme: light) {
+		body.color-theme-default {
+			background-color: #f2f3f3;
+		}
+	}
+
+	@media (prefers-color-scheme: dark) {
+		body.color-theme-default {
+			background-color: #16191f;
+		}
+
+		.color-theme-default .spinner__circle:after {
+			border-top-color: #fff;
+			border-left-color: #fff;
+		}
+	}
+
+	main {
+		margin: 32px auto;
+		text-align: center;
+	}
+
+	@keyframes spinner-rotator {
+		0% {
+			transform: rotate(0deg);
+		}
+
+		100% {
+			transform: rotate(360deg);
+		}
+	}
+
+	@keyframes spinner-line-left {
+		0% {
+			transform: rotate(0deg);
+		}
+
+		50% {
+			transform: rotate(120deg);
+		}
+
+		100% {
+			transform: rotate(0deg);
+		}
+	}
+
+	@keyframes spinner-line-right {
+		0% {
+			transform: rotate(90deg);
+		}
+
+		50% {
+			transform: rotate(-30deg);
+		}
+
+		100% {
+			transform: rotate(90deg);
+		}
+	}
+
+	.spinner,
+	.spinner *,
+	.spinner *:after {
+		box-sizing: border-box;
+	}
+
+	.spinner {
+		display: inline-block;
+		animation: spinner-rotator 0.7s linear infinite;
+	}
+
+	.spinner--large {
+		width: 48px;
+		height: 48px;
+		padding: 4px;
+		margin: 4px;
+	}
+
+	.spinner__circle {
+		float: left;
+		width: 50%;
+		height: 100%;
+		overflow: hidden;
+		position: relative;
+	}
+
+	.spinner__circle:after {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 200%;
+		content: "";
+		border-radius: 50%;
+		border: 2px solid;
+		border-right-color: transparent;
+		border-bottom-color: transparent;
+		animation: 1.5s ease-in-out infinite;
+	}
+
+	.spinner__circle--left:after {
+		left: 0;
+		animation-name: spinner-line-left;
+	}
+
+	.spinner__circle--right:after {
+		left: -100%;
+		animation-name: spinner-line-right;
+	}
+
+	.aws-logo {
+		display: block;
+		width: 33px;
+		height: 19px;
+		position: relative;
+	}
+
+	.aws-logo-wrapper {
+		position: relative;
+		padding: 9px 17px;
+	}
+
+	.aws-logo__letters {
+		fill: #ffffff;
+	}
+
+	.aws-logo__smile {
+		fill: #f8991d;
+		fill-rule: evenodd;
+	}
+
+	.skeleton-nav {
+		display: flex;
+		align-items: center;
+		height: 40px;
+		background-color: #232f3e;
+		border-bottom: 1px solid rgb(84, 91, 100);
+	}
+</style>
+  </head>
+
+
+  <body class="color-theme-light">
+    <div id="app">
+	<div class="skeleton-nav">
+		<div class="aws-logo-wrapper">
+			<svg xmlns="http://www.w3.org/2000/svg" version="2.0" focusable="false" aria-hidden="true" class="aws-logo"
+				viewBox="0 0 29 17">
+				<path class="aws-logo__letters"
+					d="M8.38 6.17a2.6 2.6 0 00.11.83c.08.232.18.456.3.67a.4.4 0 01.07.21.36.36 0 01-.18.28l-.59.39a.43.43 0 01-.24.08.38.38 0 01-.28-.13 2.38 2.38 0 01-.34-.43c-.09-.16-.18-.34-.28-.55a3.44 3.44 0 01-2.74 1.29 2.54 2.54 0 01-1.86-.67 2.36 2.36 0 01-.68-1.79 2.43 2.43 0 01.84-1.92 3.43 3.43 0 012.29-.72 6.75 6.75 0 011 .07c.35.05.7.12 1.07.2V3.3a2.06 2.06 0 00-.44-1.49 2.12 2.12 0 00-1.52-.43 4.4 4.4 0 00-1 .12 6.85 6.85 0 00-1 .32l-.33.12h-.14c-.14 0-.2-.1-.2-.29v-.46A.62.62 0 012.3.87a.78.78 0 01.27-.2A6 6 0 013.74.25 5.7 5.7 0 015.19.07a3.37 3.37 0 012.44.76 3 3 0 01.77 2.29l-.02 3.05zM4.6 7.59a3 3 0 001-.17 2 2 0 00.88-.6 1.36 1.36 0 00.32-.59 3.18 3.18 0 00.09-.81V5A7.52 7.52 0 006 4.87h-.88a2.13 2.13 0 00-1.38.37 1.3 1.3 0 00-.46 1.08 1.3 1.3 0 00.34 1c.278.216.63.313.98.27zm7.49 1a.56.56 0 01-.36-.09.73.73 0 01-.2-.37L9.35.93a1.39 1.39 0 01-.08-.38c0-.15.07-.23.22-.23h.92a.56.56 0 01.36.09.74.74 0 01.19.37L12.53 7 14 .79a.61.61 0 01.18-.37.59.59 0 01.37-.09h.75a.62.62 0 01.38.09.74.74 0 01.18.37L17.31 7 18.92.76a.74.74 0 01.19-.37.56.56 0 01.36-.09h.87a.21.21 0 01.23.23 1 1 0 010 .15s0 .13-.06.23l-2.26 7.2a.74.74 0 01-.19.37.6.6 0 01-.36.09h-.8a.53.53 0 01-.37-.1.64.64 0 01-.18-.37l-1.45-6-1.44 6a.64.64 0 01-.18.37.55.55 0 01-.37.1l-.82.02zm12 .24a6.29 6.29 0 01-1.44-.16 4.21 4.21 0 01-1.07-.37.69.69 0 01-.29-.26.66.66 0 01-.06-.27V7.3c0-.19.07-.29.21-.29a.57.57 0 01.18 0l.23.1c.32.143.656.25 1 .32.365.08.737.12 1.11.12a2.47 2.47 0 001.36-.31 1 1 0 00.48-.88.88.88 0 00-.25-.65 2.29 2.29 0 00-.94-.49l-1.35-.43a2.83 2.83 0 01-1.49-.94 2.24 2.24 0 01-.47-1.36 2 2 0 01.25-1c.167-.3.395-.563.67-.77a3 3 0 011-.48A4.1 4.1 0 0124.4.08a4.4 4.4 0 01.62 0l.61.1.53.15.39.16c.105.062.2.14.28.23a.57.57 0 01.08.31v.44c0 .2-.07.3-.21.3a.92.92 0 01-.36-.12 4.35 4.35 0 00-1.8-.36 2.51 2.51 0 00-1.24.26.92.92 0 00-.44.84c0 .249.1.488.28.66.295.236.635.41 1 .51l1.32.42a2.88 2.88 0 011.44.9 2.1 2.1 0 01.43 1.31 2.38 2.38 0 01-.24 1.08 2.34 2.34 0 01-.68.82 3 3 0 01-1 .53 4.59 4.59 0 01-1.35.22l.03-.01z">
+				</path>
+				<path class="aws-logo__smile"
+					d="M25.82 13.43a20.07 20.07 0 01-11.35 3.47A20.54 20.54 0 01.61 11.62c-.29-.26 0-.62.32-.42a27.81 27.81 0 0013.86 3.68 27.54 27.54 0 0010.58-2.16c.52-.22.96.34.45.71z">
+				</path>
+				<path class="aws-logo__smile"
+					d="M27.1 12c-.4-.51-2.6-.24-3.59-.12-.3 0-.34-.23-.07-.42 1.75-1.23 4.63-.88 5-.46.37.42-.09 3.3-1.74 4.68-.25.21-.49.09-.38-.18.34-.95 1.17-3.02.78-3.5z">
+				</path>
+			</svg>
+		</div>
+	</div>
+	<main>
+		<div class="spinner spinner--large">
+			<div class="spinner__circle spinner__circle--left"></div>
+			<div class="spinner__circle spinner__circle--right"></div>
+		</div>
+	</main>
+</div>
+
+    <script type="text/javascript">
+
+      
+
+      var RegionFinder = (function()
+      {
+          function RegionFinder( location ) {
+              this.location = location;
+          }
+
+          
+          RegionFinder.prototype = {
+
+              
+              getURLWithRegion: function() {
+                  
+                  var isDynamicDefaultRegion = ifPathContains(this.location.pathname, "region/dynamic-default-region");
+
+                  var queryArgs = removeURLParameter(this.location.search, "region");
+                  queryArgs = removeURLParameter(queryArgs, "skipRegion");
+
+                  var hashArgs = this.location.href.split("#")[1] || "";
+                  if (hashArgs) {
+                      hashArgs = "#" + hashArgs;
+                  }
+
+                  var region = this._getCurrentRegion();
+                  var newArgs = "region=" + region;
+                  if (_shouldAuth()) {
+                      newArgs = "needs_auth=true";
+                      region = "nil";
+                  }
+
+                  if (_getGlobalConsoleFromAttributes() == "true"){
+                      newArgs += "&globalnoop=true";
+                  }
+
+                  if (queryArgs &&
+                      queryArgs != "?") {
+                      queryArgs += "&" + newArgs;
+                  } else {
+                      queryArgs = "?" + newArgs;
+                  }
+
+                  
+
+                  if (!region) {
+                      
+                      var contactUs = "https://portal.aws.amazon.com/gp/aws/html-forms-controller/contactus/aws-report-issue1";
+
+                      alert("How embarrassing! There is something wrong with this URL, please contact AWS at " + contactUs);
+                  }
+
+                  var pathname = isDynamicDefaultRegion ?  "/console/home" : this.location.pathname;
+
+                  return this.location.protocol + "//" + _getRedirectHostFromAttributes() +
+                      pathname + queryArgs + hashArgs;
+              },
+
+              
+              _getCurrentRegion: function() {
+
+                  return _getRegionFromHash( this.location ) ||
+                         _getRegionFromAttributes();
+              }
+          };
+
+          
+
+          function ifPathContains(url, parameter) {
+              return (url.indexOf(parameter) != -1);
+          }
+
+          
+          function removeURLParameter(url, parameter) {
+              var urlparts= url.split('?');
+              if (urlparts.length>=2) {
+                  var prefix= encodeURIComponent(parameter);
+                  var pars= urlparts[1].split(/[&;]/g);
+                  //reverse iteration as may be destructive
+                  for (var i= pars.length; i-- > 0;) {
+                      if (pars[i].lastIndexOf(prefix, 0) !== -1) {
+                          pars.splice(i, 1);
+                      }
+                  }
+                  url= urlparts[0]+'?'+pars.join('&');
+                  return url;
+              } else {
+                  return url;
+              }
+          }
+
+          
+          function _getRegionFromAttributes() {
+              return "eu\-north\-1";
+          };
+
+          function _shouldAuth() {
+              return "";
+          };
+
+          function _getRedirectHostFromAttributes() {
+          	return "eu\-north\-1.console.aws.amazon.com";
+          }
+
+          function _getGlobalConsoleFromAttributes() {
+            return "false";
+          }
+
+          
+          function _getRegionFromHash( location ) {
+              
+              var hashArgs = "#" + (location.href.split("#")[1] || "");
+
+              
+              var hashRegionArg = "";
+
+              
+              var match = hashArgs.match("region=([a-zA-Z0-9-]+)");
+              if (match && match.length > 1 && match[1]) {
+                  hashRegionArg = match[1];
+              }
+              return hashRegionArg;
+          }
+
+          return RegionFinder;
+      })();
+
+
+      var regionFinder = new RegionFinder( window.location );
+
+      window.location.href = regionFinder.getURLWithRegion();
+    </script>
+  </body>
+</html>
+E˜¶¯‰,      bK.‚bK.‚D!ÉÖbK.‚   š    O^partitionKey=%28https%2Camazon.com%29,:https://us-east-1.console.aws.amazon.com/console/home?nc2=h_ct&region=us-east-1&skipRegion=true&src=header-signin necko:classified 1 strongly-framed 1 security-info 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 request-method GET request-Accept-Encoding gzip, deflate, br request-User-Agent Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:98.0) Gecko/20100101 Firefox/98.0 response-head HTTP/2 200 OK
+date: Mon, 04 Apr 2022 17:44:34 GMT
+content-type: text/html;charset=ISO-8859-1
+server: Server
+x-frame-options: SAMEORIGIN
+strict-transport-security: max-age=47304000; includeSubDomains
+x-amz-rid: FP4C2D21D8DWGPX2WWVJ
+vary: Accept-Encoding,X-Amzn-CDN-Cache,X-Amzn-AX-Treatment,User-Agent
+X-Firefox-Spdy: h2
+ original-response-headers date: Mon, 04 Apr 2022 17:44:34 GMT
+content-type: text/html;charset=ISO-8859-1
+server: Server
+x-frame-options: SAMEORIGIN
+strict-transport-security: max-age=47304000; includeSubDomains
+set-cookie: awsc-color-theme=light; Max-Age=864000; Expires=Thu, 14-Apr-2022 17:44:34 GMT; Domain=amazon.com; Path=/; Secure
+set-cookie: awsc-uh-opt-in=optedIn; Max-Age=864000; Expires=Thu, 14-Apr-2022 17:44:34 GMT; Domain=amazon.com; Path=/; Secure
+set-cookie: noflush_awsccs_sid=1f5ec6c028feb8a01a826586bc1647d63870fbd4bc4748c3dae47cc09331c169; Max-Age=864000; Expires=Thu, 14-Apr-2022 17:44:34 GMT; Domain=amazon.com; Path=/; Secure; HttpOnly
+set-cookie: aws-creds=; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/region; Secure
+set-cookie: aws-creds-code-verifier=; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/region; Secure
+set-cookie: aws-consoleInfo=; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/region; Secure
+set-cookie: noflush_awsccs_sid=1f5ec6c028feb8a01a826586bc1647d63870fbd4bc4748c3dae47cc09331c169; Max-Age=864000; Expires=Thu, 14-Apr-2022 17:44:34 GMT; Domain=amazon.com; Path=/; Secure; HttpOnly
+set-cookie: aws-region-redirectHost=eu-north-1.console.aws.amazon.com; Path=/region; Secure; HttpOnly
+x-amz-rid: FP4C2D21D8DWGPX2WWVJ
+vary: Accept-Encoding,X-Amzn-CDN-Cache,X-Amzn-AX-Treatment,User-Agent
+X-Firefox-Spdy: h2
+ ctid 1 uncompressed-len 0 net-response-time-onstart 336 net-response-time-onstop 385   %

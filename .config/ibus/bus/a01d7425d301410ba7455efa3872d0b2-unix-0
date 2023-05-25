@@ -1,0 +1,7 @@
+# This file is created by ibus-daemon, please do not modify it.
+# This file allows processes on the machine to find the
+# ibus session bus with the below address.
+# If the IBUS_ADDRESS environment variable is set, it will
+# be used rather than this file.
+IBUS_ADDRESS=unix:abstract=/home/solomia/.cache/ibus/dbus-dCQ3EFtH,guid=12549b6d1131951e356a8854646fa868
+IBUS_DAEMON_PID=1608

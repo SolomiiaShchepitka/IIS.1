@@ -1,0 +1,20 @@
+[Data Source]
+DisplayName=solomiia.shchepitka.itis.2020@lpnu.ua
+Enabled=true
+Parent=667236ad9227b9b0a2c340e18ba990b121ed4a53
+
+[Authentication]
+Host=smtp.gmail.com
+Method=XOAUTH2
+Port=465
+ProxyUid=system-proxy
+RememberPassword=true
+User=solomiia.shchepitka.itis.2020@lpnu.ua
+CredentialName=
+IsExternal=false
+
+[Security]
+Method=ssl-on-alternate-port
+
+[Mail Transport]
+BackendName=smtp

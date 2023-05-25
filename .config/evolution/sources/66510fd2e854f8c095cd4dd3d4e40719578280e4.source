@@ -1,0 +1,29 @@
+[Data Source]
+DisplayName=solomiia.shchepitka.itis.2020@lpnu.ua
+Enabled=true
+Parent=667236ad9227b9b0a2c340e18ba990b121ed4a53
+
+[Mail Submission]
+SentFolder=folder://local/Sent
+TransportUid=c9d7dfdb90e16803d66a64c862b1f514034d1c86
+RepliesToOriginFolder=false
+UseSentFolder=true
+
+[Mail Composition]
+Bcc=
+Cc=
+DraftsFolder=folder://local/Drafts
+ReplyStyle=default
+SignImip=true
+TemplatesFolder=
+StartBottom=inconsistent
+TopSignature=inconsistent
+Language=
+
+[Mail Identity]
+Address=solomiia.shchepitka.itis.2020@lpnu.ua
+Aliases=
+Name=
+Organization=
+ReplyTo=
+SignatureUid=none
