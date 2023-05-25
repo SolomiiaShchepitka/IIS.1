@@ -30,3 +30,5 @@
 {"timestamp":317320,"category":"nimbus_events","name":"validation_failed","extra":{"feature":"fxms-message-3","experiment":"q2-set-to-default-fox-doodle-de-holdback-50","reason":"invalid-feature"}}
 {"timestamp":317320,"category":"nimbus_events","name":"validation_failed","extra":{"experiment":"q2-set-to-default-fox-doodle-en-holdback-50","reason":"invalid-feature","feature":"fxms-message-3"}}
 {"timestamp":317320,"category":"nimbus_events","name":"validation_failed","extra":{"experiment":"q2-set-to-default-fox-doodle-fr-holdback","feature":"fxms-message-3","reason":"invalid-feature"}}
+{"timestamp":1772978,"category":"perf","name":"page_load","extra":{"fcp_time":"3242","js_exec_time":"1129","load_time":"3678","load_type":"NORMAL","response_time":"674"}}
+{"timestamp":5969931,"category":"perf","name":"page_load","extra":{"js_exec_time":"1066","fcp_time":"640","load_type":"STOP","response_time":"336","load_time":"2523"}}

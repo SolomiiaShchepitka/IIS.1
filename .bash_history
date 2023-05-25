@@ -543,3 +543,46 @@ aws
 aws --version
 python --version
 python3 --version
+git init
+
+git remote add origin <https://github.com/SolomiiaShchepitka/Lab_1.git>
+git remote add origin https://github.com/SolomiiaShchepitka/Lab_1.git
+git add .
+git commit -m "Initial commit"
+git config --global user.email solomiia.shchepitka.itis.2020@lpnu.ua
+git config --global user.name Solomiia
+git commit -m "Initial commit"
+git push -u origin main
+git push origin main
+git add README
+git remote add origin https://github.com/SolomiiaShchepitka/Lab_1.git
+git add 
+git add .
+git commit -m "Initial commit"
+git push -u origin main
+git push REMOTE-NAME BRANCH-NAME
+cd
+cd https://github.com/SolomiiaShchepitka/Lab_1.git
+cd https://github.com/SolomiiaShchepitka
+git clone https://github.com/creativetimofficial/vue-paper-dashboard
+brew install npm
+install npm
+sudo apt install nodejs
+sudo apt install npm
+sudo apt update
+sudo apt install npm
+curl -sL https://deb.nodesource.com/setup_8.x -o nodesource_setup.sh
+nano nodesource_setup.sh
+sudo apt install nodejs
+node -v
+npm -v
+npm install
+vue-paper-dashboard solomia npm run dev
+gh repo clone creativetimofficial/vue-paper-dashboard
+sudo snap install gh 
+gh repo clone creativetimofficial/vue-paper-dashboard
+gh auth login
+vue-paper-dashboard  SolomiiaShchepitka npm install
+nmp run dev
+npm run dev
+npm -v
