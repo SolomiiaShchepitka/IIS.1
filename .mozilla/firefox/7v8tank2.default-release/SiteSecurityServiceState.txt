@@ -1,5 +1,5 @@
 learn.hashicorp.com^partitionKey=%28http%2Chashicorp.com%29:HSTS	0	19082	1711803965091,1,0,2
-classify-client.services.mozilla.com:HSTS	10	19501	1716466783283,1,0
+classify-client.services.mozilla.com:HSTS	11	19502	1716575611751,1,0
 code.visualstudio.com^partitionKey=%28http%2Cvisualstudio.com%29:HSTS	0	19086	1680631225295,1,0,2
 collector.github.com^partitionKey=%28http%2Cgithub.com%29:HSTS	2	19502	2316177750962,1,0
 www.terraform.io^partitionKey=%28http%2Cterraform.io%29:HSTS	0	19082	1711803946705,1,0,2
@@ -22,4 +22,4 @@ www.mozilla.org^partitionKey=%28http%2Cmozilla.org%29:HSTS	0	18894	1648193272281
 registry.terraform.io^partitionKey=%28http%2Cterraform.io%29:HSTS	0	19082	1680270370081,1,1,2
 www.google.com^firstPartyDomain=google-canonical.search.suggestions.mozilla:HSTS	2	19501	1716466869157,1,0
 github.githubassets.com:HSTS	0	19086	1680629170188,1,0,2
-normandy.cdn.mozilla.net:HSTS	10	19501	1716466780510,1,0
+normandy.cdn.mozilla.net:HSTS	11	19502	1716575611482,1,0
