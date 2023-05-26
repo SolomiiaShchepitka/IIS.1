@@ -586,3 +586,76 @@ vue-paper-dashboard  SolomiiaShchepitka npm install
 nmp run dev
 npm run dev
 npm -v
+git init
+git remote add origin https://github.com/SolomiiaShchepitka/Lab.1.git
+git add .
+git commit -m "Initial commit"
+git push -u origin main
+git push  origin main
+touch README
+git add README
+git add .
+git commit -m 'reinitialized files'
+git push origin main
+git init
+git remote add origin https://github.com/SolomiiaShchepitka/Lab.1.git
+git add .
+git commit -m "Initial commit"
+git push -u origin main
+git push origin main
+git push -u main
+git push -u -f origin main
+mkdir repo && cd repo
+git init
+git remote add origin gh repo clone SolomiiaShchepitka/Lab.1
+git remote add origin https://github.com/SolomiiaShchepitka/Lab.1.git
+git add .
+git commit -m "Initial commit"
+git push -u origin main
+cd
+git init
+git remote add origin https://github.com/SolomiiaShchepitka/Lab.1.git
+git add .
+cd x-special/nautilus-clipboard
+copy
+file:///home/solomia/vue-paper-dashboard
+delete repo
+rmdir repo
+rmdir -r repo
+rmdir --help
+rmdir -p repo
+rm repo
+rmdir /home/solomia/repo
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/SolomiiaShchepitka/IIS.1.git
+git push -u origin main
+git remote add origin https://github.com/SolomiiaShchepitka/IIS.1.git
+git branch -M main
+git push -u origin main
+git init
+cd vue-paper-dashboard
+git init
+git remote add origin git@github.com:SolomiiaShchepitka/IIS.1.git
+git add vue-paper-dashboard
+git add .
+git push -u origin main
+git push origin main
+history
+git push origin master
+gh auth login
+git push origin master
+gh auth login
+npm install
+npm run dev
+git clone https://github.com/creativetimofficial/vue-paper-dashboard.git
+ls vue-paper-dashboard
+git init
+git remote add origin https://github.com/SolomiiaShchepitka/IIS.1.git
+git add .
+find ./ -name '.git'
+rm -r /repo/.git/
+rm -r ./repo/.git/
+find ./ -name '.git'
+rm -r ./.git/
