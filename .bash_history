@@ -659,3 +659,44 @@ rm -r /repo/.git/
 rm -r ./repo/.git/
 find ./ -name '.git'
 rm -r ./.git/
+git init
+git remote add origin https://github.com/SolomiiaShchepitka/IIS.1.git
+git add .
+git push -u origin main
+git push -u origin master
+git push -u origin main
+clear
+sudo apt update && sudo apt upgrade
+sudo apt install -y curl openssh-server ca-certificates tzdata perl
+curl -sS 
+curl -sS https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.deb.sh | sudo bash
+sudo apt install gitlab-ce
+rm usr
+rmdir  usr
+ls usr
+rm src
+rmdir src
+rm lib
+rm 'lib'
+rm /tmp
+rmdir /tmp
+sudo apt install gitlab-ce
+sudo apt-get autoremove
+sudo apt install gitlab-ce
+sudo du -sh /var/cache/apt 
+sudo apt-get clean
+sudo du -sh /var/cache/apt 
+sudo vim /etc/tlab/gitlab.rb
+curl -sS https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.deb.sh | sudo bash
+sudo apt install gitlab-ce
+sudo vim /etc/gitlab/gitlab.rb
+sudo /etc/gitlab/gitlab.rb
+sudo apt install vim
+sudo vim /etc/gitlab/gitlab.rb
+git branch
+git add .
+git commit -m "Change"
+git push origin Schepitka
+git clone https://gitlab.com/solomia2/Solomia.git
+git push origin Schepitka
+npm run dev
