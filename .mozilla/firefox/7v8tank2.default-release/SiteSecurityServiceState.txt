@@ -2,14 +2,14 @@ learn.hashicorp.com^partitionKey=%28http%2Chashicorp.com%29:HSTS	0	19082	1711803
 www.makeareadme.com^partitionKey=%28http%2Cmakeareadme.com%29:HSTS	0	19504	1716718106211,1,0
 classify-client.services.mozilla.com:HSTS	13	19504	1716664662997,1,0
 code.visualstudio.com^partitionKey=%28http%2Cvisualstudio.com%29:HSTS	0	19086	1680631225295,1,0,2
-collector.github.com^partitionKey=%28http%2Cgithub.com%29:HSTS	3	19503	2316267687443,1,0
+collector.github.com^partitionKey=%28http%2Cgithub.com%29:HSTS	4	19504	2316267687443,1,0
 www.terraform.io^partitionKey=%28http%2Cterraform.io%29:HSTS	0	19082	1711803946705,1,0,2
 firefox.settings.services.mozilla.com:HSTS	14	19504	1716664589616,1,0
 services.addons.mozilla.org:HSTS	11	19503	1716664657450,1,0
 github.githubassets.com:HSTS	0	19086	1680629170188,1,0,2
-alive.github.com^partitionKey=%28http%2Cgithub.com%29:HSTS	2	19503	1716665169042,1,0
+alive.github.com^partitionKey=%28http%2Cgithub.com%29:HSTS	3	19504	1716665169042,1,0
 incoming.telemetry.mozilla.org:HSTS	14	19504	1716664587270,1,0
-github.com^partitionKey=%28http%2Cgithub.com%29:HSTS	3	19503	1716665168131,1,1
+github.com^partitionKey=%28http%2Cgithub.com%29:HSTS	4	19504	1716665168131,1,1
 releases.hashicorp.com^partitionKey=%28http%2Chashicorp.com%29:HSTS	0	19082	1680268145021,1,1,2
 marketplace.visualstudio.com^partitionKey=%28http%2Cvisualstudio.com%29:HSTS	0	19086	1680631200369,1,1,2
 spocs.getpocket.com:HSTS	1	19504	1748200660548,1,0
@@ -18,7 +18,7 @@ www.ukraine.com.ua^partitionKey=%28http%2Cukraine.com.ua%29:HSTS	0	19503	1716631
 www.google.com^partitionKey=%28http%2Cgoogle.com%29:HSTS	3	19503	1716631439572,1,0
 terraform.io^partitionKey=%28http%2Cterraform.io%29:HSTS	1	19503	1711802899613,1,0,2
 about.gitlab.com^partitionKey=%28http%2Cgitlab.com%29:HSTS	0	19503	1685128933912,1,0
-api.github.com^partitionKey=%28http%2Cgithub.com%29:HSTS	3	19503	1716664589709,1,1
+api.github.com^partitionKey=%28http%2Cgithub.com%29:HSTS	4	19504	1716664589709,1,1
 location.services.mozilla.com:HSTS	4	19501	1716470525109,1,1
 aus5.mozilla.org:HSTS	12	19503	1716664687015,1,0
 auth.hashicorp.com^partitionKey=%28http%2Chashicorp.com%29:HSTS	0	19082	1680267963677,1,0,2
